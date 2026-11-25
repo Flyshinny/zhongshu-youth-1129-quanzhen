@@ -59,7 +59,7 @@ tr.muted td { color:var(--sub); } tr.tot td { font-weight:700; border-top:2px so
 .sb-l small, .sbh small { color:var(--sub); margin-left:6px; font-size:.8rem; }
 .sb-t { display:flex; height:18px; border-radius:5px; overflow:hidden; background:var(--line); }
 .sb-t span { display:block; height:100%; border-right:1px solid var(--card); }
-ol.chk { padding-left:1.4em; margin:6px 0 0; } ol.chk li { margin:8px 0; }
+ul.chk, ol.chk { padding-left:1.4em; margin:6px 0 0; } ul.chk li, ol.chk li { margin:8px 0; }
 .warn { background:var(--warn); border-left:4px solid var(--warnl); }
 footer { color:var(--sub); font-size:.82rem; text-align:center; margin-top:26px; }
 @media (max-width:620px) { .kpis { grid-template-columns:repeat(2,1fr); } .split { grid-template-columns:1fr; } section { padding:16px 14px; }
@@ -169,6 +169,49 @@ footer { color:var(--sub); font-size:.82rem; text-align:center; margin-top:26px;
 <p class="find">報名集中在 9/28 那一週，共 100 人，占 42%；之後每週遞減。10 月底以後幾乎沒有新報名。</p>
 <div class="hb"><span class="hb-l">8月中</span><span class="hb-t"><span class="hb-f" style="width:1.0%"></span></span><span class="hb-v">1</span></div><div class="hb"><span class="hb-l">9/14週</span><span class="hb-t"><span class="hb-f" style="width:4.0%"></span></span><span class="hb-v">4</span></div><div class="hb"><span class="hb-l">9/21週</span><span class="hb-t"><span class="hb-f" style="width:3.0%"></span></span><span class="hb-v">3</span></div><div class="hb"><span class="hb-l">9/28週</span><span class="hb-t"><span class="hb-f" style="width:100.0%"></span></span><span class="hb-v">100</span></div><div class="hb"><span class="hb-l">10/5週</span><span class="hb-t"><span class="hb-f" style="width:61.0%"></span></span><span class="hb-v">61</span></div><div class="hb"><span class="hb-l">10/12週</span><span class="hb-t"><span class="hb-f" style="width:31.0%"></span></span><span class="hb-v">31</span></div><div class="hb"><span class="hb-l">10/19週</span><span class="hb-t"><span class="hb-f" style="width:17.0%"></span></span><span class="hb-v">17</span></div><div class="hb"><span class="hb-l">10/26週</span><span class="hb-t"><span class="hb-f" style="width:14.0%"></span></span><span class="hb-v">14</span></div><div class="hb"><span class="hb-l">11/16週</span><span class="hb-t"><span class="hb-f" style="width:1.0%"></span></span><span class="hb-v">1</span></div>
 <div class="cap">以週一為一週的起點；另有 5 筆是人工補登，沒有時間戳記。</div>
+</section>
+
+<section>
+<h2>與大會總表交叉比對</h2>
+<p class="find">大會總表上的「瑞周全真 208 人」就是表單裡的論壇報名者，工作人員 22 人另外列。加起來全真實際有 <b>230 人</b>，占全場 1,198 人的 19%。</p>
+<div class="tbl"><table>
+<thead><tr><th>項目</th><th class="num">大會總表</th><th class="num">全真表單</th><th>結果</th></tr></thead>
+<tbody>
+<tr><td>論壇報名者</td><td class="num">208</td><td class="num">212</td><td class="gap">多 4 人</td></tr>
+<tr><td>工作人員（影音 13・兒童班 8・行政 1）</td><td class="num">22</td><td class="num">22</td><td class="ok">一致</td></tr>
+<tr><td>120 週年動員</td><td class="num">35</td><td class="num">35</td><td class="ok">一致</td></tr>
+<tr><td>回程便當</td><td class="num">177</td><td class="num">177</td><td class="ok">一致</td></tr>
+<tr><td>11/29 兒童（小學）</td><td class="num">4</td><td class="num">4</td><td class="ok">一致</td></tr>
+</tbody></table></div>
+<div class="cap">多出的 4 人：21–30 歲 1 人、31–40 歲 2 人、點傳師 1 人，可能是交出總表後才補報的。另有 3 筆回覆沒有填區別。</div>
+
+<h3>11/28 兩天的兒童人數對不上</h3>
+<p class="find" style="margin-bottom:6px">11/29 的兒童人數兩邊幾乎一致（43 對 42），但 11/28 落差很大，會影響當晚的照顧和住宿安排。</p>
+<div class="tbl"><table>
+<thead><tr><th>單位</th><th class="num">總表 11/28 小學</th><th class="num">兒童照顧表單「兩天」</th></tr></thead>
+<tbody>
+<tr><td>先天</td><td class="num">7</td><td class="num gap">0</td></tr>
+<tr><td>瑞周天曉</td><td class="num">4</td><td class="num gap">9</td></tr>
+<tr><td>啟化</td><td class="num">0</td><td class="num gap">3</td></tr>
+<tr><td>瑞周精德／天罡</td><td class="num">0</td><td class="num gap">2</td></tr>
+<tr><td>大光寺</td><td class="num">1</td><td class="num gap">2</td></tr>
+<tr><td>瑞周全真</td><td class="num">2</td><td class="num">2</td></tr>
+<tr class="tot"><td>合計</td><td class="num">14</td><td class="num">18</td></tr>
+</tbody></table></div>
+<ul class="chk">
+<li><b>兒童照顧老師名單不完整</b>：總表上兒童班老師 26 位，加國中支援 6 位，共 32 位；表單的師資名單只有 13 位，天曉、精德、啟化的老師都沒有列進去。</li>
+<li><b>學齡前小朋友不在照顧名單裡</b>：總表 11/29 有學齡前 17 位，兒童照顧只收小學生，當天怎麼照顧請確認。</li>
+<li><b>全真的晚餐和住宿是自己辦的</b>：總表上是 0，因為全真另外辦共融之夜（107 人）和夜宿中一堂（63 人）。晚會的 107 人裡有 19 人沒有報名 11/29 大會，其中 9 人會在中一堂過夜。</li>
+</ul>
+
+<h3>開幕手語缺 44 人，可以從這幾群人找</h3>
+<div class="split">
+<div class="pill"><div>有 120 週年經驗、還沒報開幕表演</div><b>18 人</b>　<span class="cap">天如 6・天龍 5・天儲 3・天隆 2・德容 1・至善 1（不含育樂營）</span></div>
+<div class="pill"><div>16–40 歲、只報論壇、沒有表演</div><b>33 人</b>　<span class="cap">光輝 10・天如 6・天儲 4・至善 4・其他 9</span></div>
+<div class="pill"><div>其他單位有 120 週年經驗</div><b>152 人</b>　<span class="cap">先天 48・天曉 39・天定 14・啟化 11（如果可以跨單位參加）</span></div>
+<div class="pill"><div>已報手語、還沒確認 11/28 綵排</div><b>19 人</b>　<span class="cap">飛天仙女、鼓隊都已確認</span></div>
+</div>
+<p class="cap">年齡比較：全真 16–55 歲占 77%，全場是 84%；全場 61–80 歲 45 人中，有 20 人（44%）來自全真。</p>
 </section>
 
 <section class="warn">
